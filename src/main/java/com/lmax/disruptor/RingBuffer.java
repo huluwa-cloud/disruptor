@@ -81,6 +81,11 @@ abstract class RingBufferFields<E> extends RingBufferPad
  *
  * @param <E> implementation storing the data for sharing during exchange or parallel coordination of an event.
  */
+
+/**
+ * 核心数据结构 RingBuffer
+ *
+ */
 public final class RingBuffer<E> extends RingBufferFields<E> implements Cursored, EventSequencer<E>, EventSink<E>
 {
     /**
